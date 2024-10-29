@@ -1,0 +1,97 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background color */
+body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Navbar container */
+.parent_navber {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 999;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+
+/* Navbar list styles */
+.navbar_list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+}
+
+
+/* Navbar list items */
+.navbar_list li {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar_list li:hover {
+    color: #f0f0f0;
+    transform: scale(1.1);
+}
+
+/* Button styles */
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Keyframe animation for navbar appearance */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes wave {
+    0%, 100% {
+        color: #f9a825;
+    }
+    50% {
+        color: #f44336;
+    }
+}
+
+.wave-text {
+    display: inline-block;
+    animation: wave 2s infinite;
+}
+
+
+
+
+

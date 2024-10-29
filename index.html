@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body class="bg-gray-800 text-white">
+
+    <div id="home">
+        <!-- Home Section -->
+        <div class="parent_navber">
+            <div class="navbar">
+                <h1 class="text-xl font-bold">Renex</h1>
+                <div class="navbar_list">
+                    <ul id="navbar-list" class="hidden md:flex space-x-4">
+                        <li class="hover:underline cursor-pointer" onclick="scrollToSection('home')">Home</li>
+                        <li class="hover:underline cursor-pointer" onclick="scrollToSection('about')">About</li>
+                        <li class="hover:underline cursor-pointer" onclick="scrollToSection('projects')">Projects</li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="flex items-center ml-4">
+                        <i id="theme-icon" class="fas fa-sun"></i>
+                    </button>
+                    <button class="px-3 py-2 ml-4 rounded-md bg-slate-100 text-black hover:bg-slate-300">
+                        Hire Me
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu md:hidden">
+            <ul id="mobile-menu-list" class="navbar_list hidden flex-col space-y-2">
+                <li class="hover:underline cursor-pointer" onclick="scrollToSection('home')">Home</li>
+                <li class="hover:underline cursor-pointer" onclick="scrollToSection('about')">About</li>
+                <li class="hover:underline cursor-pointer" onclick="scrollToSection('projects')">Projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="mt-20 text-center">
+            <img src='./image.png' alt="Profile" class="rounded-full w-32 h-32 mx-auto mb-4" />
+            <h2 class="text-2xl font-bold mb-4 wave-text">Welcome to My Portfolio</h2>
+            <p class="mb-8 w-[400px] mx-auto">I am a seasoned full-stack software engineer with over 
+                8 years of professional experience, specializing in backend development. 
+                My expertise lies in crafting robust and scalable SaaS-based 
+                architectures on the Amazon AWS platform.</p>
+            
+            <!-- Portfolio Content -->
+            <div class="portfolio grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 1</h3>
+                    <p>A brief description of project 1.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 2</h3>
+                    <p>A brief description of project 2.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <div class="portfolio-item bg-gray-700 p-4 rounded-md">
+                    <h3 class="font-semibold">Project 3</h3>
+                    <p>A brief description of project 3.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="mt-10">
+        <div id="won-section">
+            <h2 class="text-xl font-bold mb-4 text-center">Some of My Notable Work</h2>
+            <div class="flex justify-between">
+                <div class="won-item bg-gray-700 p-4 rounded-md">
+                    <img src='./image.png' alt="Project 1" class="w-full h-64 object-cover" />
+                    <h3 class="font-semibold text-sm">Project 1</h3>
+                    <p>A brief description of project 1.</p>
+                </div>
+                <div class="won-item bg-gray-700 p-4 rounded-md">
+                    <img src='./image.png' alt="Project 2" class="w-full h-64 object-cover" />
+                    <h3 class="font-semibold text-sm">Project 2</h3>
+                    <p>A brief description of project 2.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="script.js"></script>
+    <script src="gsap.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Media queries */
+@media (max-width: 640px) {
+    /* Show mobile menu on smaller screens */
+    .mobile-menu {
+        display: block;
+    }
+
+    /* Hide desktop navbar list on smaller screens */
+    .navbar_list {
+        display: none; /* Hide by default */
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Space between items */
+    }
+
+    /* Show the mobile menu list when toggled */
+    .navbar_list.show {
+        display: flex; /* Show when toggled */
+    }
+}
+
+@media (min-width: 641px) {
+    /* Ensure navbar list is displayed on larger screens */
+    .navbar_list {
+        display: flex; /* Show on larger screens */
+    }
+
+    /* Hide mobile menu toggle button on larger screens */
+    #mobile-menu-toggle {
+        display: none; /* Hide hamburger icon */
+    }
+}
